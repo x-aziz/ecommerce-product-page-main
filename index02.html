@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index02.css" />
+    <title>frontend mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./ecommerce-product-page-main/ecommerce-product-page-main/images/favicon-32x32.png"
+    />
+      <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="big_container">
+      <nav>
+        <div class="nav_left">
+          <div>
+            <img
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/logo.svg"
+              alt=""
+            />
+          </div>
+          <a href="">Collections </a><a href="">Men</a><a href="">Women</a
+          ><a href="">About</a><a href="">Contact</a>
+        </div>
+        <div class="nav_right">
+          <img
+            class="nav_img1_right"
+            id="shop"
+            src="./ecommerce-product-page-main/ecommerce-product-page-main/images/icon-cart.svg"
+            alt=""
+          /><img
+            class="nav_img2_right"
+            src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-avatar.png"
+            alt=""
+          />
+        </div>
+      </nav>
+      <div class="cart">
+        <div class="up_cart">
+          <p>Cart</p>
+        </div>
+        <p class="empty">YOUR CART IS EMPTY</p>
+        <div class="secondPart">
+          <div class="medium_cart">
+            <div>
+              <img
+                class="img1_medium"
+                src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <p>Fall Limited Edition Sneakers $125.00 x 3<b> $375.00</b></p>
+            </div>
+            <div>
+              <img
+                class="img2_medium"
+                src="./ecommerce-product-page-main/ecommerce-product-page-main/images/icon-delete.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="down_cart"><button class="btn4">Checkout</button></div>
+        </div>
+      </div>
+      <section class="section1">
+        <div class="left_section1">
+          <div class="big_img_left_section1">
+            <img
+              id="mainImg"
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="small_img_left_section1">
+            <img
+              id="img1"
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              id="img2"
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              id="img3"
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              id="img4"
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="right_section1">
+          <p class="p1_right_section1">Sneaker Company</p>
+          <h1>Fall Limited Edition</h1>
+          <p class="p2_right_section1">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <h2 class="p1_price">$125.00</h2>
+            <p class="p2_price">50%</p>
+            <p class="p3_price">$250.00</p>
+          </div>
+          <div class="part_button">
+            <div class="quantity">
+              <button class="btn1">-</button>
+              <input
+                class="input1"
+                type="number"
+                title="only numbers"
+                value="0"
+                min="0"
+              />
+              <button class="btn2">+</button>
+            </div>
+            <div>
+              <button class="btn4" onclick="addToStore()">
+                <img
+                  src="./ecommerce-product-page-main/ecommerce-product-page-main/images/icon-cart2.svg"
+                  alt=""
+                />
+                <p>Add to cart</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="zoom">
+      <div class="conatiner">
+        <div class="left_section1">
+          <div class="big_img_left_section1 left2_section1">
+            <button class="btn_goLeft">></button>
+            <button class="btn_goRight">&lt;</button>
+            <img
+              id="bigImg"
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="small_img_left_section1">
+            <img
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              src="./ecommerce-product-page-main/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index02.js"></script>
+</html>
